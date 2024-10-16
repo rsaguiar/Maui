@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38CED9F9-4E3B-457D-A472-DC3F4B3523EB}|UiLayoutApp\\UiLayoutApp.csproj|c:\\users\\user01\\source\\repos\\uilayoutapp\\uilayoutapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{38CED9F9-4E3B-457D-A472-DC3F4B3523EB}|UiLayoutApp\\UiLayoutApp.csproj|solutionrelative:uilayoutapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CED9F9-4E3B-457D-A472-DC3F4B3523EB}|UiLayoutApp\\UiLayoutApp.csproj|c:\\users\\user01\\source\\repos\\uilayoutapp\\uilayoutapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{38CED9F9-4E3B-457D-A472-DC3F4B3523EB}|UiLayoutApp\\UiLayoutApp.csproj|solutionrelative:uilayoutapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CED9F9-4E3B-457D-A472-DC3F4B3523EB}|UiLayoutApp\\UiLayoutApp.csproj|c:\\users\\user01\\source\\repos\\uilayoutapp\\uilayoutapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CED9F9-4E3B-457D-A472-DC3F4B3523EB}|UiLayoutApp\\UiLayoutApp.csproj|solutionrelative:uilayoutapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\UiLayoutApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "UiLayoutApp\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\UiLayoutApp\\AppShell.xaml",
+              "RelativeToolTip": "UiLayoutApp\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-14T19:42:16.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\UiLayoutApp\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "UiLayoutApp\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\UiLayoutApp\\MainPage.xaml.cs",
+              "RelativeToolTip": "UiLayoutApp\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T18:49:04.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\UiLayoutApp\\MainPage.xaml",
+              "RelativeDocumentMoniker": "UiLayoutApp\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\User01\\source\\repos\\UiLayoutApp\\UiLayoutApp\\MainPage.xaml",
+              "RelativeToolTip": "UiLayoutApp\\MainPage.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-14T18:42:22.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

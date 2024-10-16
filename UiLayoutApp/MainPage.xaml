@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UiLayoutApp.MainPage"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand" RowDefinitions="0.5*,*,*,*" ColumnDefinitions="*,*">
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Frame" x:Key="masterFrameStyle">
+                        <Setter Property="CornerRadius" Value="30" />
+                        <Setter Property="WidthRequest" Value="200" />
+                        <Setter Property="HeightRequest" Value="200" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="BorderColor" Value="Transparent" />
+                        <Setter Property="HorizontalOptions" Value="Center" />
+                    </Style>
+                    <Style TargetType="Frame" x:Key="circularFrameStyle">
+                        <Setter Property="HeightRequest" Value="60" />
+                        <Setter Property="WidthRequest" Value="60" />
+                        <Setter Property="CornerRadius" Value="70" />
+                        <Setter Property="BackgroundColor" Value="#474747" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="BorderColor" Value="Transparent" />
+                        <Setter Property="HorizontalOptions" Value="Center" />
+                        <Setter Property="IsClippedToBounds" Value="True" />
+                    </Style>
+                    <Style TargetType="Frame" x:Key="circularFrameBigStyle">
+                        <Setter Property="HeightRequest" Value="80" />
+                        <Setter Property="WidthRequest" Value="80" />
+                        <Setter Property="CornerRadius" Value="70" />
+                        <Setter Property="Padding" Value="5" />
+                        <Setter Property="BackgroundColor" Value="#474747" />
+                        <Setter Property="BorderColor" Value="Transparent" />
+                        <Setter Property="HorizontalOptions" Value="Center" />
+                        <Setter Property="IsClippedToBounds" Value="True" />
+                    </Style>
+                    <Style TargetType="Image" x:Key="circularImageStyle">
+                        <Setter Property="HeightRequest" Value="30" />
+                        <Setter Property="WidthRequest" Value="30" />
+                        <Setter Property="BackgroundColor" Value="Transparent" />
+                        <Setter Property="Aspect" Value="AspectFit" />
+                        <Setter Property="HorizontalOptions" Value="Center" />
+                        <Setter Property="VerticalOptions" Value="Center" />
+                    </Style>
+                    <Style TargetType="Label" x:Key="labelWhiteStyle">
+                        <Setter Property="FontAttributes" Value="Bold" />
+                        <Setter Property="FontSize" Value="18" />
+                        <Setter Property="BackgroundColor" Value="Transparent" />
+                        <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+                        <Setter Property="VerticalOptions" Value="StartAndExpand" />
+                    </Style>
+                    <Style TargetType="Switch">
+                        <Setter Property="OnColor" Value="Gray" />
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+
+            <!--#region Title-->
+
+            <FlexLayout JustifyContent="SpaceBetween"  Grid.Row="0" Grid.ColumnSpan="2" MaximumHeightRequest="80">
+                <Label Text="Morning, Alex" FontSize="24" FontAttributes="Bold" TextColor="White" Margin="5, 5, 0, 0" WidthRequest="120"/>
+                <Image Source="https://cdn-icons-png.flaticon.com/512/51/51649.png" BackgroundColor="White" WidthRequest="30" HeightRequest="30" Margin="0, 5, 5, 0" />
+            </FlexLayout>
+            <!--#endregion Title-->
+
+            <!--#region Top Left-->
+            <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="#333333" Style="{x:StaticResource masterFrameStyle }">
+                <Grid VerticalOptions="FillAndExpand" RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+                    <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="LightBlue" Style="{x:StaticResource circularFrameStyle }" Margin="0, 0, 30, 0" >
+                        <Image Source="avatar.png" HeightRequest="60" WidthRequest="60"
+                                Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="1" Style="{x:StaticResource circularFrameStyle }" Margin="30, 0, 0, 0">
+                        <Image Source="power_settings.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" BackgroundColor="Transparent" BorderColor="Transparent" >
+                        <Label MaximumWidthRequest="100"  LineBreakMode="WordWrap" Style="{x:StaticResource labelWhiteStyle }" Margin="0, 20, 30, 0">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Welcome to " TextColor="White" />
+                                    <Span Text="Alax Room"   TextColor="White"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Frame>
+                </Grid>
+            </Frame>
+            <!--#endregion Top Left-->
+
+            <!--#region Top Right-->
+            <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="GreenYellow" Style="{x:StaticResource masterFrameStyle }">
+                <Grid VerticalOptions="FillAndExpand" RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+                    <Frame Grid.Row="0" Grid.Column="0" Style="{x:StaticResource circularFrameStyle }" Margin="0, 0, 30, 0" >
+                        <Frame.Background>
+                            <LinearGradientBrush EndPoint="1,0">
+                                <GradientStop Color="YellowGreen"
+                          Offset="0.1" />
+                                <GradientStop Color="GreenYellow"
+                          Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                        <Image Source="lock.png" 
+                                Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Label Grid.Row="1" Grid.ColumnSpan="2" MaximumWidthRequest="100" LineBreakMode="WordWrap" Style="{x:StaticResource labelWhiteStyle }" Margin="0, 20, 30, 0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Security " FontAttributes="Bold" FontSize="20" />
+                                <Span Text="24/7 System On" FontSize="14" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Switch Grid.Row="2" Grid.ColumnSpan="2" OnColor="Grey" ThumbColor="Transparent" />
+                </Grid>
+            </Frame>
+            <!--#endregion Top Right-->
+
+            <!--#region Center-->
+            <Frame Grid.Row="2" Grid.ColumnSpan="2" WidthRequest="400"  BackgroundColor="Gold" Style="{x:StaticResource masterFrameStyle }">
+                <Grid VerticalOptions="FillAndExpand" RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+                    <Label Grid.Row="0" Grid.Column="0" Text="Air Conditioner" FontSize="24" FontAttributes="Bold" Margin="5, 5, 0, 0" />
+                    <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="#333333" Style="{x:StaticResource circularFrameStyle }" HorizontalOptions="EndAndExpand" >
+                        <Image Source="arrow_up.png"  
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Label Grid.Row="1" Grid.Column="0" Text="28º C" FontSize="32" FontAttributes="Bold" Margin="5, 5, 0, 0" />
+                    <Frame Grid.Row="1" Grid.Column="1" Style="{x:StaticResource circularFrameStyle }" BackgroundColor="White" HorizontalOptions="EndAndExpand" >
+                        <Image Source="arrow_down.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Switch Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="StartAndExpand" OnColor="Grey" ThumbColor="Transparent" />
+                </Grid>
+            </Frame>
+            <!--#endregion Center-->
+
+            <!--#region Bottom Left-->
+            <Frame Grid.Row="3" Grid.Column="0" BackgroundColor="#333333" Style="{x:StaticResource masterFrameStyle }">
+                <Grid VerticalOptions="FillAndExpand" RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+                    <Frame Grid.Row="0" Grid.Column="0" Style="{x:StaticResource circularFrameStyle }" Margin="0, 0, 30, 0" >
+                        <Image Source="lightbulb.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Label Grid.Row="1" Grid.ColumnSpan="2"  MaximumWidthRequest="100" LineBreakMode="WordWrap" Style="{x:StaticResource labelWhiteStyle }" Margin="0, 20, 30, 0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Room Lights " TextColor="White"  />
+                                <Span Text="OFF - 30 min" FontSize="14" TextColor="White"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Switch Grid.Row="2" Grid.ColumnSpan="2" OnColor="Grey" ThumbColor="Transparent" />
+                </Grid>
+            </Frame>
+            <!--#endregion Bottom Left-->
+
+            <!--#region Bottom Right-->
+            <Frame Grid.Row="3" Grid.Column="1" BackgroundColor="#333333" Style="{x:StaticResource masterFrameStyle }">
+                <Grid VerticalOptions="FillAndExpand" RowDefinitions="*,*" ColumnDefinitions="*,*">
+                    <Frame Grid.Row="0" Grid.Column="0" Style="{x:StaticResource circularFrameBigStyle }" >
+                        <Image Source="water_drop.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="1" Style="{x:StaticResource circularFrameBigStyle }" BackgroundColor="GreenYellow" >
+                        <Image Source="wifi.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="0" Style="{x:StaticResource circularFrameBigStyle }" >
+                        <Image Source="tv.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                    <Frame Grid.Row="1" Grid.Column="1" Style="{x:StaticResource circularFrameBigStyle }" >
+                        <Image Source="pets.png" 
+                               Style="{x:StaticResource circularImageStyle }" />
+                    </Frame>
+                </Grid>
+            </Frame>
+            <!--#endregion Bottom Right-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
